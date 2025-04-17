@@ -10,9 +10,15 @@ public class GameRunner
     System.out.println("Welcome to the Game of Nim!");
 
     board.populate(); // static method call
+     int fileSize = board.getFileSize();
     
     game nim = new game(); 
     nim.play();
-    
+    if(nim.running == true){
+      
+      while(fileSize != 1 || fileSize != 0){
+
+      }
+    }
   }
 }
