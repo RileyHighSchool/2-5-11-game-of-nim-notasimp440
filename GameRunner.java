@@ -17,7 +17,7 @@ public class GameRunner
     if(nim.running == true){
       
       while(fileSize != 1 || fileSize != 0){
-
+       game.setFirstPlayer();
       }
     }
   }

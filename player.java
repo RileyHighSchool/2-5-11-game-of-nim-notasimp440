@@ -7,6 +7,8 @@ public class player
   public String name = "";
   private double points;
   /* your code here - accessor(s) */ 
+Scanner sc = new Scanner(System.in);
+
   public int getScore(){
     return score;
     
@@ -23,7 +25,9 @@ public class player
     
   }
   public void setName(String n){
-    name = n;
+    System.out.println("enter your name: ");
+    String name = sc.nextLine();
+     n = name;
   }
 
   public double getPoints(int pnts){
