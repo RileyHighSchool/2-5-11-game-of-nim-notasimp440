@@ -1,14 +1,19 @@
 import java.util.Scanner;
 
-public class player
+public class Player
 {
   /* attributes */
-  public int score = 0;
-  public String name = "";
+  public int score;
+  public String name;
   private double points;
   /* your code here - accessor(s) */ 
 Scanner sc = new Scanner(System.in);
 
+  public Player(){
+    System.out.println("What is your name? ");
+    name = sc.nextLine();
+    score = 0;
+  }
   public int getScore(){
     return score;
     
@@ -21,7 +26,7 @@ Scanner sc = new Scanner(System.in);
 
   /* your code here - mutator(s) */ 
   public void updateScore(int s){
-    score += 1; 
+    score += s; 
     
   }
   public void setName(String n){
